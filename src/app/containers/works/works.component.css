@@ -1,0 +1,79 @@
+.works{
+    color:rgb(44, 42, 42);
+    background: #fff;
+}
+.works .title::before,
+.teams .title::before{
+    background: #111;
+}
+.works .title::after,
+.teams .title::after{
+    content: "What I Have";
+    background: #fff;
+}
+
+.works .works-content .box{
+    transition: all 0.1s ease;
+    margin: 1.5rem;
+    position: relative;
+    width: calc(33% - 50px);
+}
+.works .works-content .box .front-face{
+    background: #302e28;
+    text-align: center;
+    border-radius: 6px;
+    padding: 50px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: white;
+    height: 13.75rem;
+    transition: all 0.5s ease;
+}
+.box .back-face{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 220px;
+  width: 100%;
+  padding: 30px;
+  color: #111;
+  opacity: 0;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  background: white;
+  border: #302e28 1px;
+  border-radius: 10px;
+  transform: translateY(110px) rotateX(-90deg);
+  box-shadow: 0px 5px 20px 0px rgba(0, 81, 250, 0.1);
+  transition: all 0.5s ease;
+}
+.box .back-face p{
+  margin-top: 10px;
+  text-align: justify;
+}
+.box:hover .back-face{
+  opacity: 1;
+  transform: rotateX(0deg);
+}
+.box:hover .front-face{
+  opacity: 0;
+  transform: translateY(-110px) rotateX(90deg);
+}
+.works .works-content i{
+    font-size: 50px;
+    color: crimson;
+    transition: color 0.3s ease;
+}
+
+.works .works-content .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 2rem;
+}
+@media (max-width: 768px) {
+  .works .works-content .box{
+      width: 100%;
+      margin-bottom: 2rem;
+  } 
+}

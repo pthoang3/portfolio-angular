@@ -1,0 +1,51 @@
+.skills{
+    color:rgb(44, 42, 42);
+    background: #f5f3ed;
+}
+.skills .title::before,
+.teams .title::before{
+    background: #111;
+}
+.skills .title::after,
+.teams .title::after{
+    content: "What I Have";
+}
+.skills .skills-content .card{
+    width: calc(33% - 20px);
+    background: #302e28;
+    text-align: center;
+    border-radius: 6px;
+    padding: 50px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: white;
+}
+.skills .skills-content .card:hover{
+    background: crimson;
+    color: white;
+}
+.skills .skills-content .card .box{
+    transition: all 0.1s ease;
+}
+.skills .skills-content .card:hover .box{
+    transform: scale(1.05);
+}
+.skills .skills-content .card i{
+    font-size: 50px;
+    color: crimson;
+    transition: color 0.3s ease;
+}
+.skills .skills-content .card:hover i{
+    color: #302e28;
+}
+.skills .skills-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+@media (max-width: 768px) {
+    .skills .skills-content .card{
+        width: 100%;
+        margin-bottom: 1rem;
+    } 
+}
