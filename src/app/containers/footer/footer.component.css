@@ -5,3 +5,9 @@ footer{
     background-color: #444;
     line-height: 2rem;
 }
+@media (max-width: 500px) {
+    footer{
+        padding: 10px;
+    }
+    
+}

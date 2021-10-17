@@ -8,12 +8,20 @@
     background-color: #f5f3ed;
 }
 .contact .contact-content .column{
-    width: calc(50% - 30px);
+    width: calc(50% - 20px);
+    margin-right: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
 }
 .contact .contact-content .text{
     font-size: 20px;
     font-weight: 600;
-    margin-bottom: 10px;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: 2rem;
+    margin-right: auto;
+    margin-left: auto;
 }
 .contact .contact-content .column{
     margin-bottom: 1rem;
@@ -58,12 +66,12 @@
 }
 .contact .left form .field,
 .contact .left form .fields .field{
-    height: 45px;
+    height: 50px;
     width: 100%;
     margin-bottom: 15px;
 }
 .contact .left form .textarea{
-    height: 80px;
+    height: 140px;
     width: 100%;
 }
 .contact .left form .name{
@@ -112,18 +120,21 @@
     color: crimson;
     background: none;
   }
-  @media (max-width: 500px) {
+  @media (max-width: 750px) {
     .contact .max-width{
-        padding: 2rem;
+        padding: 2rem auto;
     }
     .contact .contact-content .column{
-          width: 100%;
+        width: 100%;
+        margin-bottom: 4rem;
+        margin-right: auto;
+        margin-left: auto;
+          
     }
     .contact .contact-content .column .text{
         text-align: center;
         font-size: 2rem;
-        margin-top: 4rem;
-        margin-bottom: 2rem;
+        margin-bottom: 1.5rem;
     }
     .contact .left form .fields{
         flex-direction: column;
@@ -135,4 +146,8 @@
     .left form .error-box{
        width: 150px;
     } 
+    .left form .button-area button{
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
 }

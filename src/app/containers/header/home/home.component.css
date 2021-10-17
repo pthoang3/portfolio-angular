@@ -18,7 +18,7 @@
   margin-right: 0;
 }
 .home .home-content .text-1{
-    font-size: 27px;
+    font-size: 30px;
     margin-bottom: 1rem;
 }
 .home .home-content .text-2{
@@ -28,7 +28,7 @@
     margin-bottom: 1rem;
 }
 .home .home-content .text-3{
-    font-size: 40px;
+    font-size: 45px;
     margin: 5px 0;
     margin-bottom: 1rem;
 }
@@ -53,23 +53,17 @@
     background: none;
 }
  @media (max-width: 947px){
-    /* .home .home-content .text-2{
-        font-size: 70px;
-    } */
-    .home .home-content .text-3{
-        font-size: 35px;
-    }
     .home .home-content a{
-        font-size: 23px;
+        font-size: 30px;
         padding: 10px 30px;
     }
 } 
  @media (max-width: 768px) {
     .home .home-content .text-1 {
-        font-size: 30px;
+        font-size: 24px;
     }
     .home .home-content .text-2{
-        font-size: 40px;
+        font-size: 50px;
     }
     .home .home-content .text-3{
         font-size: 35px;
@@ -83,12 +77,12 @@
 } 
 @media (max-width: 500px) {
     .home .home-content .text-1{
-        font-size: 23px;
+        font-size: 20px;
     }
     .home .home-content .text-2{
-        font-size: 30px;
+        font-size: 40px;
     }
     .home .home-content .text-3{
-        font-size: 25px;
+        font-size: 26px;
     }
 }

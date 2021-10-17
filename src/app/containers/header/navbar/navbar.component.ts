@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Directive } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -7,10 +6,17 @@ import { Directive } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
-
-  constructor() { }
-
+  showToggle = false;
+  bigScreen = false;
+  currentColor!: string;
   ngOnInit(): void {
+    this.bigScreen = window.innerWidth > 750;
+    window.addEventListener("resize", event => {
+      this.bigScreen = window.innerWidth > 750;
+    });
+  }
+  onToggle() {
+    this.showToggle = !this.showToggle;
   }
 
 }
