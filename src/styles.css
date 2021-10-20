@@ -31,7 +31,7 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-.about, .skills, .works, .contact, footer{
+.navbar .about, .skills, .works, .contact, footer{
     font-family: 'Roboto', sans-serif;
     line-height: 1.5rem;
 }

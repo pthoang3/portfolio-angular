@@ -36,6 +36,7 @@ export class NavbarComponent implements OnInit {
     window.addEventListener("resize", event => {
       this.bigScreen = window.innerWidth > 750;
     });
+
   }
   onToggle() {
     this.showToggle = !this.showToggle;

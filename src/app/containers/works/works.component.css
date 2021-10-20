@@ -2,14 +2,8 @@
     color:rgb(44, 42, 42);
     background: #fff;
 }
-.works .title::before,
-.teams .title::before{
+.works .title::before{
     background: #111;
-}
-.works .title::after,
-.teams .title::after{
-    content: "What I Have";
-    background: #fff;
 }
 
 .works .works-content .box{

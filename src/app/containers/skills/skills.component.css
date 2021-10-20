@@ -6,9 +6,6 @@
 .skills .title::before{
     background: #111;
 }
-.skills .title::after{
-    content: "What I Have";
-}
 .skills .skills-content .card{
     width: calc(33% - 30px);
     background: #302e28;
