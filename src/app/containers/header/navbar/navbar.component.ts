@@ -9,6 +9,7 @@ export class NavbarComponent implements OnInit {
   showToggle = false;
   bigScreen = false;
   currentColor!: string;
+  
   ngOnInit(): void {
     this.bigScreen = window.innerWidth > 750;
     window.addEventListener("resize", event => {
@@ -18,5 +19,5 @@ export class NavbarComponent implements OnInit {
   onToggle() {
     this.showToggle = !this.showToggle;
   }
-
+  
 }

@@ -16,6 +16,7 @@
 .menu li a:hover{
     color: crimson;
 }
+
 @media (max-width: 750px){
     #showToggle{
         position: fixed;
