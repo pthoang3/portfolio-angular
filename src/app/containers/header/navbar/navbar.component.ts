@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, EventEmitter, HostListener, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -6,18 +6,37 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
-  showToggle = false;
-  bigScreen = false;
-  currentColor!: string;
-  
-  ngOnInit(): void {
-    this.bigScreen = window.innerWidth > 750;
-    window.addEventListener("resize", event => {
-      this.bigScreen = window.innerWidth > 750;
-    });
+
+  isDrawerOpen!: boolean;
+
+  @Output()
+  drawerToggleEmitter: EventEmitter<boolean> = new EventEmitter<boolean>();
+
+  constructor(private navElement: ElementRef) {}
+
+  ngOnInit() {
+    this.navElement = null;
+    this.isDrawerOpen = false;
   }
-  onToggle() {
-    this.showToggle = !this.showToggle;
+
+  ngAfterViewInit() {
+    this.navElement = <HTMLElement> document.getElementById("navbar");
   }
-  
+
+  @HostListener("window:scroll", ["$event"])
+  onScroll($event: Event) {
+    let scrollFactor = 200;
+    let opacity = (window.pageYOffset / scrollFactor);
+    opacity = opacity < 1 ? opacity : 1;
+
+    if (opacity <= 1) {
+      this.navElement.style.backgroundColor = "rgba(0, 0, 0, " + opacity + ")";
+    }
+
+    if (window.pageYOffset / scrollFactor > 1) {
+      this.navElement.classList.add("navbar-shadow");
+    } else {
+      this.navElement.classList.remove("navbar-shadow");
+    }
+  }
 }
