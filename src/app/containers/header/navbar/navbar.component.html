@@ -1,11 +1,18 @@
 <nav class="navbar">
     <div class="max-width">
         <div class="logo"><a href="#">Thuy Hoang</a></div>
-        <div class="menu-toggle" [class.drawer-open]="isOpen">
-            <div (click)="onToggle(!isOpen)" class="menu-btn">
+        <div class="mobile-screen" *ngIf="!bigScreen">
+        <div class="menu-toggle">
+            <div (click)="onToggle()" class="menu-btn">
                 <i class="fas fa-bars"></i>
         </div>
         </div>
-        <app-nav-menu [isOpen]="isOpen" (menuToggleEmmiter="toggleNavMenu("$event")""></app-nav-menu>
+        <ul class="menu" id="showToggle" *ngIf="showToggle">
+            <li *ngFor="let section of sections; let i = index"><a href="{{section.id}}"  class="menu-btn" (click)="onToggle()">{{section.name}}</a></li>
+        </ul>
+        </div>
+        <ul class="menu" id="showToggle" *ngIf="bigScreen">
+            <li *ngFor="let section of sections; let i = index"><a href="{{section.id}}"  class="menu-btn" (click)="onToggle()">{{section.name}}</a></li>
+        </ul>
     </div>
 </nav>

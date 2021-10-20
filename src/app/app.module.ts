@@ -10,7 +10,6 @@ import { WorksComponent } from './containers/works/works.component';
 import { FooterComponent } from './containers/footer/footer.component';
 import { ContactComponent } from './containers/contact/contact.component';
 import { SkillsComponent } from './containers/skills/skills.component';
-import { NavMenuComponent } from './containers/header/navbar/nav-menu/nav-menu.component';
 
 
 @NgModule({
@@ -24,7 +23,6 @@ import { NavMenuComponent } from './containers/header/navbar/nav-menu/nav-menu.c
     FooterComponent,
     ContactComponent,
     SkillsComponent,
-    NavMenuComponent,
   ],
   imports: [
     BrowserModule
