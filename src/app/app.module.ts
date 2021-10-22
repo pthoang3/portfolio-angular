@@ -10,6 +10,8 @@ import { WorksComponent } from './containers/works/works.component';
 import { FooterComponent } from './containers/footer/footer.component';
 import { ContactComponent } from './containers/contact/contact.component';
 import { SkillsComponent } from './containers/skills/skills.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatIconModule } from '@angular/material/icon'
 
 
 @NgModule({
@@ -25,7 +27,9 @@ import { SkillsComponent } from './containers/skills/skills.component';
     SkillsComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    BrowserAnimationsModule,
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

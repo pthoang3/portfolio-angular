@@ -19,18 +19,18 @@
 }
 .home .home-content .text-1{
     font-size: 30px;
-    margin-bottom: 1rem;
+    margin-bottom: 2.5rem;
 }
 .home .home-content .text-2{
     font-size: 75px;
     font-weight: 600;
     margin-left: -3px;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
 }
 .home .home-content .text-3{
     font-size: 45px;
     margin: 5px 0;
-    margin-bottom: 1rem;
+    margin-bottom: 2.5rem;
 }
 .home .home-content .text-3 span{
     color: #302e28;
@@ -61,12 +61,15 @@
  @media (max-width: 768px) {
     .home .home-content .text-1 {
         font-size: 24px;
+        margin-bottom: 2rem;
     }
     .home .home-content .text-2{
         font-size: 50px;
+        margin-bottom: 2.5rem;
     }
     .home .home-content .text-3{
         font-size: 35px;
+        margin-bottom: 1.5rem;
     }
     .home .home-content a{
         font-size: 20px;
@@ -78,11 +81,14 @@
 @media (max-width: 500px) {
     .home .home-content .text-1{
         font-size: 20px;
+        margin-bottom: 1.5rem;
     }
     .home .home-content .text-2{
         font-size: 40px;
+        margin-bottom: 1.75rem;
     }
     .home .home-content .text-3{
         font-size: 26px;
+        margin-bottom: 1rem;
     }
 }

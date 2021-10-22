@@ -4,7 +4,7 @@
         <div class="mobile-screen" *ngIf="!bigScreen">
         <div class="menu-toggle">
             <div (click)="onToggle()" class="menu-btn">
-                <i class="fas fa-bars"></i>
+                <mat-icon [inline]="true">menu</mat-icon>
         </div>
         </div>
         <ul class="menu" id="showToggle" *ngIf="showToggle">

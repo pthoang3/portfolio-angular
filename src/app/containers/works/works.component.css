@@ -54,7 +54,7 @@
   opacity: 0;
   transform: translateY(-110px) rotateX(90deg);
 }
-.works .works-content i{
+.works .works-content .mat-icon{
     font-size: 50px;
     color: crimson;
     transition: color 0.3s ease;
