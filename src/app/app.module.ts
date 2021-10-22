@@ -12,6 +12,7 @@ import { ContactComponent } from './containers/contact/contact.component';
 import { SkillsComponent } from './containers/skills/skills.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
