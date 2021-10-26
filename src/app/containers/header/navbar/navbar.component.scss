@@ -28,10 +28,12 @@
 /* menu btn styling */
 .menu-btn{
     color: #fff;
-    font-size: 23px;
+    font-size: 35px;
     cursor: pointer;
     display: none;
     background-color: transparent;
+    font-weight: 900;
+    padding-top: 10px;
 }
 /*responsive*/
 @media (max-width: 750px){
@@ -45,7 +47,7 @@
         display: block;
         z-index: 999;
     }
-    .menu-btn i.active:before{
+    .menu-btn mat-icon .active:before{
         content: "\f00d";
     }
 }

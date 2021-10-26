@@ -30,12 +30,14 @@
 .skills .skills-content .card:hover .box{
     transform: scale(1.05);
 }
-.skills .skills-content .card i{
-    font-size: 50px;
-    color: crimson;
+.skills .skills-content .card .icon{
+    font-size: 80px;
+    margin-bottom: 30px;
     transition: color 0.3s ease;
+    font-weight: 900;
+    color: crimson !important;
 }
-.skills .skills-content .card:hover i{
+.skills .skills-content .card:hover .icon.color{
     color: #302e28;
 }
 .skills .skills-content .card .text{
