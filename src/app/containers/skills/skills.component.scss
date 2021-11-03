@@ -35,9 +35,9 @@
     margin-bottom: 30px;
     transition: color 0.3s ease;
     font-weight: 900;
-    color: crimson !important;
+    color: crimson;
 }
-.skills .skills-content .card:hover .icon.color{
+.skills .skills-content .card:hover .icon{
     color: #fff;
 }
 .skills .skills-content .card .text{
